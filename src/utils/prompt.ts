@@ -13,8 +13,8 @@ const source = {
         }
         return `Please enter a valid path to file(s).
 Examples:
-To select single file: deriv-app/packages/account/src/Modules/Page404/Components/Icon404.jsx
-To select multiple files: deriv-app/packages/account/**/*.jsx`;
+To select single file: app/account/src/Modules/Page404/Components/Icon404.jsx
+To select multiple files: app/packages/account/**/*.jsx`;
     },
 };
 

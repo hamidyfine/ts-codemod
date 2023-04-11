@@ -68,3 +68,5 @@ npm run build
 ```
 
 Please check [jscodeshift](https://github.com/facebook/jscodeshift) docs before writing a codemod.
+
+_Forked from [Deriv-CodeMod](https://github.com/binary-com/deriv-codemod)_
