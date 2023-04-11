@@ -1,12 +1,11 @@
-
 ## Installation
 
-`deriv-codemod` requires [Node.js](https://nodejs.org/) v14+ to run.
+`codemod` requires [Node.js](https://nodejs.org/) v14+ to run.
 
 To install globally:
 
 ```sh
-npm i -g deriv-codemod
+npm i -g codemod
 ```
 
 ## Usage
@@ -16,7 +15,7 @@ npm i -g deriv-codemod
 Just run the below command to get started.
 
 ```sh
-deriv-codemod
+codemod
 ```
 
 #### Step 1:
@@ -26,11 +25,11 @@ deriv-codemod
 Once you run the command, it will ask you for the source file/files path where you want to run codmod. It can be an absolute path or relative path.
 
 Path examples:
- - To select single file:  ./packages/p2p/src/components/user/user-avatar/user-avatar.jsx
- - To select multiple files: ./packages/p2p/**/*.jsx
 
-`deriv-codemod` uses [fast-glob](https://github.com/mrmlnc/fast-glob) internally to match file/files. You can check out [fast-glob](https://github.com/mrmlnc/fast-glob) documentation for more match syntax.
+-   To select single file: ./packages/p2p/src/components/user/user-avatar/user-avatar.jsx
+-   To select multiple files: ./packages/p2p/\*_/_.jsx
 
+`codemod` uses [fast-glob](https://github.com/mrmlnc/fast-glob) internally to match file/files. You can check out [fast-glob](https://github.com/mrmlnc/fast-glob) documentation for more match syntax.
 
 ### Step 2:
 
@@ -48,12 +47,12 @@ Once the codemod ran successfully, make sure to commit the changes to get better
 
 <img width="1165" alt="image" src="https://user-images.githubusercontent.com/56330681/154033150-0539db54-3026-4012-9869-8f6433be7ed0.png">
 
-Rerun `deriv-codemod` and pass the path where you want to run the `Convert proptypes to TS` codemod.
+Rerun `codemod` and pass the path where you want to run the `Convert proptypes to TS` codemod.
 
 Note: Please make sure to pass in the new path after you changed the extension. Since we changed the extension to `tsx`, we are passing the path with `.tsx` extension.
 Path examples:
- - To select single file:  ./packages/p2p/src/components/user/user-avatar/user-avatar.tsx
- - To select multiple files: ./packages/p2p/**/*.tsx
+
+-   To select single file: ./packages/p2p/src/components/user/user-avatar/user-avatar.tsx
+-   To select multiple files: ./packages/p2p/\*_/_.tsx
 
 After that, select `Convert proptypes to TS` codemod.
-

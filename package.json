@@ -1,10 +1,10 @@
 {
-  "name": "deriv-codemod",
-  "version": "1.1.0",
+  "name": "codemod",
+  "version": "1.0.0",
   "description": "A tool for helping migrate code",
   "main": "./bin/cli.js",
   "bin": {
-    "deriv-codemod": "./bin/cli.js"
+    "codemod": "./bin/cli.js"
   },
   "files": [
     "bin"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binary-com/deriv-codemod.git"
+    "url": "git+https://github.com/hamidyfine/ts-codemod"
   },
   "author": "bala.krishna@deriv.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/binary-com/deriv-codemod/issues"
+    "url": "https://github.com/hamidyfine/ts-codemod/issues"
   },
-  "homepage": "https://github.com/binary-com/deriv-codemod#readme",
+  "homepage": "https://github.com/hamidyfine/ts-codemod#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.18.2",

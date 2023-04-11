@@ -1,30 +1,30 @@
 <p align="center">
-  <a href="https://www.npmjs.com/package/deriv-codemod" target="_blank" >
-    <img src="https://badge.fury.io/js/deriv-codemod.svg" alt="npm version">
+  <a href="https://www.npmjs.com/package/codemod" target="_blank" >
+    <img src="https://badge.fury.io/js/codemod.svg" alt="npm version">
   </a>
 </p>
 
-`deriv-codemod` is a tool for helping migrate code. It uses [jscodeshift](https://github.com/facebook/jscodeshift) internally to transform the source code.
+`codemod` is a tool for helping migrate code. It uses [jscodeshift](https://github.com/facebook/jscodeshift) internally to transform the source code.
 
 ## Installation
 
-`deriv-codemod` requires [Node.js](https://nodejs.org/) v14+ to run.
+`codemod` requires [Node.js](https://nodejs.org/) v14+ to run.
 
 To install globally:
 
 ```sh
-npm i -g deriv-codemod
+npm i -g codemod
 ```
 
 Just run the below command to get started.
 
 ```sh
-deriv-codemod
+codemod
 ```
 
 ## How to use
 
-Read about how to use the command [here](https://github.com/binary-com/deriv-codemod/blob/master/HOW-TO-USE.md).
+Read about how to use the command [here](https://github.com/binary-com/codemod/blob/master/HOW-TO-USE.md).
 
 ## List of codemods available
 
