@@ -1,20 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["esnext"],
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "baseUrl": "./",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "module": "commonjs",
+    "removeComments": true,
     "strict": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowUmdGlobalAccess": false,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "skipDefaultLibCheck": true
+    "resolveJsonModule": true
   },
-  "include": ["src/**/*.ts", "src/**/*.js"]
+  "exclude": [
+    "node_modules",
+    ".history"
+  ],
 }

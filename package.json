@@ -1,9 +1,17 @@
 {
   "name": "deriv-codemod",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A tool for helping migrate code",
+  "main": "./bin/cli.js",
   "bin": {
-    "deriv-codemod": "./dist/index.js"
+    "deriv-codemod": "./bin/cli.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch"
   },
   "repository": {
     "type": "git",
@@ -15,24 +23,29 @@
     "url": "https://github.com/binary-com/deriv-codemod/issues"
   },
   "homepage": "https://github.com/binary-com/deriv-codemod#readme",
-  "dependencies": {
-    "fast-glob": "^3.2.11",
-    "inquirer": "^8.2.0",
-    "is-git-dirty": "^2.0.1",
-    "jscodeshift": "^0.13.1",
-    "typescript": "^4.5.5"
-  },
   "devDependencies": {
-    "@types/inquirer": "^8.2.0",
-    "@types/node": "^17.0.14",
-    "rimraf": "^3.0.2",
-    "tsc": "^2.0.4"
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "eslint-config-alloy": "^4.5.1",
+    "fast-glob": "^3.2.12",
+    "fs": "^0.0.1-security",
+    "is-git-dirty": "^2.0.1",
+    "path": "^0.12.7",
+    "rollup": "^2.75.3",
+    "typescript": "^4.7.2",
+    "util": "^0.12.4"
   },
-  "scripts": {
-    "clean": "rimraf ./dist",
-    "build": "npm run clean && tsc --build"
-  },
-  "files": [
-    "dist"
-  ]
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.3.0",
+    "enquirer": "^2.3.6"
+  }
 }
