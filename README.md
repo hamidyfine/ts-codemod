@@ -4,7 +4,11 @@
   </a>
 </p>
 
+## What is Codemod?
 `codemod` is a tool for helping migrate code. It uses [jscodeshift](https://github.com/facebook/jscodeshift) internally to transform the source code.
+
+## Introduction
+This repository contains a codemod tool designed to help developers migrate JavaScript codebases to TypeScript. TypeScript is a popular programming language that adds optional static type checking to JavaScript, making it easier to catch errors and write more maintainable code. However, migrating an existing JavaScript codebase to TypeScript can be a time-consuming and error-prone task. This codemod tool automates much of the process by automatically updating JavaScript code to TypeScript syntax wherever possible, including adding type annotations and updating imports. By using this tool, developers can quickly and easily migrate their codebase to TypeScript, saving time and reducing the likelihood of errors.
 
 ## Installation
 
